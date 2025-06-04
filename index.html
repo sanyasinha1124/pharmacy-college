@@ -2,115 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>STIPSR Pharmacy College</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pharmacy College - Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    function toggleMenu() {
-      document.getElementById("mobile-menu").classList.toggle("hidden");
+  <style>
+    /* For dropdown on hover in desktop */
+    .dropdown:hover .dropdown-menu {
+      display: block;
     }
-  </script>
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
   <!-- Header -->
-  <header class="bg-[#0B4A6B] text-white">
-    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
-      <div class="flex items-center gap-4">
-        <img src="logo.png" alt="Logo" class="w-16 h-16 object-contain" />
-        <h1 class="text-2xl font-bold">STIPSR Pharmacy College</h1>
+  <header class="bg-blue-800 text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <div class="flex items-center space-x-4">
+        <img src="logo.png" alt="Logo" class="h-10 w-auto">
+        <h1 class="text-xl font-semibold">STIPSR College of Pharmacy</h1>
       </div>
-      <nav class="hidden md:flex gap-6 text-white font-medium">
-        <a href="index.html" class="hover:text-yellow-300">Home</a>
-        <a href="about.html" class="hover:text-yellow-300">About</a>
-        <a href="courses.html" class="hover:text-yellow-300">Courses</a>
-        <a href="faculty.html" class="hover:text-yellow-300">Faculty</a>
-        <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+
+      <!-- Hamburger Menu (mobile) -->
+      <div class="md:hidden">
+        <button onclick="toggleMenu()" class="text-2xl">☰</button>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <div class="relative dropdown">
+          <button class="hover:text-gray-300">About Us ▾</button>
+          <div class="absolute hidden dropdown-menu bg-white text-black mt-2 py-2 rounded shadow-lg w-40">
+            <a href="about.html" class="block px-4 py-2 hover:bg-gray-100">Our Story</a>
+            <a href="infrastructure.html" class="block px-4 py-2 hover:bg-gray-100">Infrastructure</a>
+          </div>
+        </div>
+        <a href="courses.html" class="hover:text-gray-300">Courses</a>
+        <a href="faculty.html" class="hover:text-gray-300">Faculty</a>
+        <a href="contact.html" class="hover:text-gray-300">Contact</a>
       </nav>
-      <button class="abc" onclick="toggleMenu()">
-        <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
-          <path d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-
-        <!-- Dropdown Container -->
-  <div class="relative inline-block text-left">
-    <!-- Dropdown Button -->
-    <button onclick="toggleDropdown()" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none">
-      Menu ▼
-    </button>
-
-    <!-- Dropdown Content -->
-    <div id="dropdownMenu" class="hidden absolute z-10 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
-      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Courses</a>
-      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
     </div>
-  </div>
 
-  <script>
-    function toggleDropdown() {
-      const menu = document.getElementById('dropdownMenu');
-      menu.classList.toggle('hidden');
-    }
-  </script>
-    </div>
-    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
-
-   
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-blue-700">
+      <a href="index.html" class="block py-2">Home</a>
+      <a href="about.html" class="block py-2">About Us</a>
+      <a href="infrastructure.html" class="block py-2">Infrastructure</a>
+      <a href="courses.html" class="block py-2">Courses</a>
+      <a href="faculty.html" class="block py-2">Faculty</a>
+      <a href="contact.html" class="block py-2">Contact</a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-white py-16 px-4 text-center">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-5xl font-bold text-[#0B4A6B]">Welcome to STIPSR Pharmacy College</h2>
-      <p class="mt-4 text-lg text-gray-600">A leading institution for pharmaceutical education and research.</p>
-      <a href="contact.html" class="mt-6 inline-block bg-[#0B4A6B] text-white px-6 py-3 rounded hover:bg-[#0d5a84]">Get in Touch</a>
-    </div>
-  </section>
-
-  <!-- Courses Preview -->
-  <section class="py-12 px-4 bg-gray-100">
-    <div class="max-w-6xl mx-auto">
-      <h3 class="text-2xl font-semibold text-center text-[#0B4A6B]">Our Programs</h3>
-      <div class="grid gap-6 mt-8 md:grid-cols-3">
-        <div class="bg-white p-6 rounded shadow text-center">
-          <h4 class="font-bold text-lg mb-2">D.Pharm</h4>
-          <p>Diploma in Pharmacy - 2 year program</p>
-        </div>
-        <div class="bg-white p-6 rounded shadow text-center">
-          <h4 class="font-bold text-lg mb-2">B.Pharm</h4>
-          <p>Bachelor of Pharmacy - 4 year program</p>
-        </div>
-        <div class="bg-white p-6 rounded shadow text-center">
-          <h4 class="font-bold text-lg mb-2">M.Pharm</h4>
-          <p>Master of Pharmacy - 2 year program</p>
-        </div>
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <h2 class="text-3xl font-bold text-center mb-6">Welcome to STIPSR College of Pharmacy</h2>
+    <p class="text-gray-700 text-center">Empowering the next generation of pharmaceutical leaders.</p>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Courses Offered</h3>
+        <p>Explore our diploma and degree pharmacy programs.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Modern Infrastructure</h3>
+        <p>State-of-the-art laboratories and research facilities.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Experienced Faculty</h3>
+        <p>Learn from industry experts and PhD holders.</p>
       </div>
     </div>
-  </section>
-
-  <!-- WhatsApp + Contact CTA -->
-  <section class="text-center py-12 bg-white">
-    <h3 class="text-xl font-semibold mb-4 text-[#0B4A6B]">Want to Join Us?</h3>
-    <p>Talk to our team instantly via WhatsApp!</p>
-    <a href="https://chat.whatsapp.com/HHqbg9VYvTv4FRWJq6ngB1" target="_blank"
-       class="mt-4 inline-block bg-green-500 text-white px-5 py-2 rounded hover:bg-green-600">
-      Join WhatsApp Group
-    </a>
-  </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-[#0B4A6B] text-white py-6">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-      <p>&copy; 2025 STIPSR Pharmacy College. All rights reserved.</p>
-      <div class="flex gap-4 mt-4 md:mt-0">
-        <a href="#" class="hover:text-yellow-300">Privacy Policy</a>
-        <a href="#" class="hover:text-yellow-300">Terms</a>
-      </div>
+  <footer class="bg-blue-800 text-white py-4 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p>&copy; 2025 STIPSR College of Pharmacy. All rights reserved.</p>
+      <p>Email: contact@pharmacy.edu | Phone: +91 1234567890</p>
     </div>
   </footer>
 
+  <!-- Toggle Script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
 </body>
 </html>
