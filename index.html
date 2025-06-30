@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pharmacy College - Home</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* For dropdown on hover in desktop */
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
-  </style>
-</head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College of Pharmacy - Excellence in Pharmaceutical Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
 
- <!-- Header Section -->
-  <header style="background-color:#0B4A6B; color: white;">
-    <div style="display:flex; justify-content:space-between; align-items:center; padding:10px 20px; flex-wrap:wrap;">
+</head>
+
+
+
+<body style="background-color:grey;" >
+    <!-- Header Section -->
+   <!-- Include Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Header Section -->
+  <!-- Header Section -->
+   <!-- #0B4A6B   #333333-->
+  <header style="background-color: rgba(0, 100, 0, 0.521); color: white;margin-top: 0px;padding-top: 0px;">
+    <div style="display:flex; justify-content:space-between; align-items:center ;flex-wrap:wrap;">
       
       <!-- Logo & Title -->
-      <div style="display:flex; align-items:center; gap:10px;">
-        <img src="abc.jpeg" alt="Pharmacy Logo" style="height:60px; width:auto;">
-        <h1 style="font-size:24px; margin:0; color:#e1e1ff;">STIPSR</h1>
-      </div>
+      <!-- <div style="display:flex; align-items:center;">
+        <img src="abc.jpeg" alt="Pharmacy Logo" style="height:200px; width:auto;align-self:centre;padding-bottom: 0px;">
+        <h1 style="font-size:24px; margin:0; color:#e1e1ff;">  Sumatidevi Tompe Institute of Pharmaceutical Science and Research (STIPSR)</h1>
+      </div> -->
+      <!-- <div style="display: flex; align-items: center; flex-wrap: wrap; justify-content: center; text-align: center; padding: 10px;">
+  <img src="abc.jpeg" alt="Pharmacy Logo" style="height: 100px; width: auto; margin-right: 0px;">
+  <h1 style="font-size: 20px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 10px 0; color: #e1e1ff; max-width: 600px;">
+    Sumatidevi Tompe Institute of Pharmaceutical Science and Research 
+
+  </h1> -->
+<!-- Responsive Header -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-black p-4 sm:p-6">
+
+  <!-- Logo -->
+  <div class="w-20 h-20 flex-shrink-0">
+    <img src="your-logo.png" alt="Institute Logo" class="w-full h-full object-contain" />
+  </div>
+
+  <!-- Text Content -->
+  <div class="text-center sm:text-left">
+    <h1 class="text-lg sm:text-2xl font-semibold text-gray-800 leading-tight">
+      Sumatidevi Tompe Institute of Pharmaceutical Science and Research
+    </h1>
+    <p class="text-sm sm:text-base text-gray-700">
+      Approved by Government
+    </p>
+  </div>
+
+</div>
+
+
+
+ 
+  
+  </div>
+ 
+</div>
+
 
       <!-- Hamburger Button -->
       <div onclick="toggleMenu()" style="font-size:28px; cursor:pointer; display:none;" id="menu-icon">
@@ -32,37 +71,120 @@
 
     <!-- Navigation -->
     <nav>
-      <ul id="nav-links" style="list-style:none; padding:0; margin:0; display:flex; justify-content:center; flex-wrap:wrap;">
+       <ul id="nav-links" style="list-style:none; padding:0; margin:0; display:flex; justify-content:center; flex-wrap:wrap;">
         <li style="position:relative;"><a href="index.html" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Home</a></li>
+
+
+        
 
         <li style="position:relative;">
           <a href="#" style="color:white; text-decoration:none; padding:10px 15px; display:block;">About Us ▼</a>
           <div style="display:none; position:absolute; background:white; z-index:999;" class="dropdown">
-            <a href="about.html" style="color:black; padding:10px; display:block; text-decoration:none;">About</a>
-            <a href="institute.html" style="color:black; padding:10px; display:block; text-decoration:none;">Institute</a>
-            <a href="vison.html" style="color:black; padding:10px; display:block; text-decoration:none;">Vision & Mission</a>
-            <a href="message.html" style="color:black; padding:10px; display:block; text-decoration:none;">Message</a>
+            <a href="about/about.html" style="color:black; padding:10px; display:block; text-decoration:none;">About Institute</a>
+           
+            <a href="about/vison.html" style="color:black; padding:10px; display:block; text-decoration:none;">Vision & Mission</a>
+            <a href="about/message.html" style="color:black; padding:10px; display:block; text-decoration:none;">Message</a>
+            
+            <a href="about/cdc.html" style="color:black; padding:10px; display:block; text-decoration:none;">GB/CDC</a>
+            <a href="org.html" style="color:black; padding:10px; display:block; text-decoration:none;">Organogram</a>
+            <a href="about/infrastructure.html" style="color:black; padding:10px; display:block; text-decoration:none;">Infrastructure</a>
           </div>
         </li>
+         <li style="position:relative;">
+          <a href="#" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Affiliation ▼   </a>
+          <div style="display:none; position:absolute; background:white; z-index:999;" class="dropdown">
+            <a href="affiliation/MSBTE.html" style="color:black; padding:10px; display:block; text-decoration:none;">MSBTE</a>
+            <a href="affiliation/aishe.html" style="color:black; padding:10px; display:block; text-decoration:none;">Govt of Mah</a>
+            <a href="affiliation/aishe.html" style="color:black; padding:10px; display:block; text-decoration:none;">AISHE</a>
+            <a href="affiliation/iso.html" style="color:black; padding:10px; display:block; text-decoration:none;">ISO</a>
+          </div>
+        </li>
+        <li style="position:relative;">
+          <a href="admisson/admissions.html" style="color:white; text-decoration:none; padding:10px 15px; display:block;">R&D▼</a>
+          <div style="display:none; position:absolute; background:white; z-index:999;" class="dropdown">
+            <a href="#" style="color:black; padding:10px; display:block; text-decoration:none;">Publication</a>
+            <a href="institute.html" style="color:black; padding:10px; display:block; text-decoration:none;">Patent</a>
+            <a href="vison.html" style="color:black; padding:10px; display:block; text-decoration:none;">Copywright</a>
+            
+          </div>
+        </li>
+       
 
         <li style="position:relative;">
           <a href="#" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Courses ▼</a>
           <div style="display:none; position:absolute; background:white; z-index:999;" class="dropdown">
-            <a href="bpharm.html" style="color:black; padding:10px; display:block; text-decoration:none;">D.Pharm</a>
+            <a href="courses/dpharm.html" style="color:black; padding:10px; display:block; text-decoration:none;">D.Pharm</a>
           </div>
         </li>
 
-        <li><a href="admissions.html" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Faculty</a></li>
+        <li><a href="admissions.html" style="color:white; text-decoration:none; padding:10px 15px; display:block;">IQAC</a></li>
         <li><a href="events.html" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Events</a></li>
-        <li><a href="contact.html" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Contact</a></li>
+        <li><a href="contact.html" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Alumini</a></li>
+         <li style="position:relative;">
+          <a href="#" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Student corner▼</a>
+          <div style="display:none; position:absolute; background:white; z-index:999;" class="dropdown">
+            <a href="bpharm.html" style="color:black; padding:10px; display:block; text-decoration:none;">Student activity</a>
+          </div>
+        </li>
+
+        <li><a href="contact.html" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Download</a></li>
+
+        <li class="mt-2 md:mt-0">
+  <a href="login/login.html"
+     class="bg-orange-500 hover:bg-orange-600 text-white font-medium px-4 py-2 rounded-md transition duration-200 block text-center md:inline-block">
+    Faculty Login
+  </a>
+</li>
+
+
+       
       </ul>
     </nav>
   </header>
 
   <!-- Example Main Content -->
-  <main style="padding: 20px;">
-    <h2>Welcome to STIPSR Pharmacy College</h2>
-    <p>This is a sample responsive multi-page website using only inline CSS and basic JavaScript.</p>
+
+  <!-- Preloader -->
+<div id="preloader" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#fff;display:flex;align-items:center;justify-content:center;z-index:9999;">
+  <div class="dots">
+    <span></span><span></span><span></span>
+  </div>
+</div>
+
+<style>
+.dots span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  background: #006633;
+  border-radius: 50%;
+  animation: bounce 1.2s infinite ease-in-out;
+}
+.dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1); }
+}
+</style>
+
+
+<script>
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      document.getElementById("preloader").style.display = "none";
+      document.getElementById("main-content").style.display = "block";
+    }, 3000); // 3000ms = 3 seconds
+  });
+</script>
+
+  <main style="padding: 0px;margin: 0px;">
+ 
   </main>
 
   <!-- JavaScript for Toggle Menu and Dropdowns -->
@@ -109,4 +231,337 @@
     window.addEventListener("resize", handleResize);
     window.addEventListener("load", handleResize);
   </script>
+   
 
+    <!-- Hero Section -->
+    <!-- <section class="hero">
+        
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="container">
+                    <p>We are the Future of Pharmaceutical Sciences</p>
+                    <h3>Join our legacy of excellence in pharmacy education</h3>
+                    <a href="admissions.html" class="btn">Apply Now</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <h2>Great Research Facilities</h2>
+                    <p>Explore our state-of-the-art laboratories and research centers</p>
+                    <a href="research.html" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <h2>100% Placement Assistance</h2>
+                    <p>Our graduates are placed in top pharmaceutical companies worldwide</p>
+                    <a href="placements.html" class="btn">Career Services</a>
+                </div>
+            </div>
+        </div>
+       
+    </section> -->
+
+    <section class="hero" style="padding:0px;">
+    <div class="hero-slider" style="padding-top:0px;">
+        <div class="slide active" style="background-image: url('images/page11.jpg'); padding-top:0px;">
+            <div class="container">
+                <p>We are the Future of Pharmaceutical Sciences</p>
+                <h3>Join our legacy of excellence in pharmacy education</h3>
+                <a href="admissions.html" class="btn">Apply Now</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('images/page12.png');">
+            <div class="container">
+                <h2>Great Research Facilities</h2>
+                <p>Explore our state-of-the-art laboratories and research centers</p>
+                <a href="research.html" class="btn">Learn More</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('images/page13.jpeg.png');">
+            <div class="container">
+                <h2>100% Placement Assistance</h2>
+                <p>Our graduates are placed in top pharmaceutical companies worldwide</p>
+                <a href="placements.html" class="btn">Career Services</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider Dots -->
+    <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+<script>
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+            dots[i].classList.toggle('active', i === index);
+        });
+        currentSlide = index;
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    // Auto slide
+    setInterval(nextSlide, 5000);
+
+    // Dot click
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => showSlide(index));
+    });
+</script>
+
+
+
+    <!-- Quick Links Section -->
+    <section class="quick-links-section">
+        <div class="container">
+            <div class="quick-link-box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3> <a href="programs.html">Programs <i class="fas fa-arrow-right"></i></a></h3>
+                <p>Explore our undergraduate and graduate programs</p>
+                
+            </div>
+            <div class="quick-link-box">
+                <i class="fas fa-calendar-alt"></i>
+                <h3> <a href="calendar.html">Academic Calendar <i class="fas fa-arrow-right"></i></a></h3>
+                <p>Important dates and events for current students</p>
+               
+            </div>
+            <div class="quick-link-box">
+                <i class="fas fa-flask"></i>
+                <h3><a href="r&d/publication.html">Research <i class="fas fa-arrow-right"></i></a></h3>
+                <p>Discover our innovative research projects</p>
+                
+            </div>
+            <div class="quick-link-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3><a href="visit.html">Plan Visit <i class="fas fa-arrow-right"></i></a></h3>
+                <p>Schedule a campus tour</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notifications</h2>
+            </div>
+            
+        <div style="color:black">
+            <marquee behavior="scroll" direction="left" scrollamount="5">
+                🎓 Admissions open for 2024-25! | Deadline: June 30, 2024 | Scholarship applications now available.
+            </marquee>
+        </div>
+
+        <!-- <div style="background-color: #e1e1ff; padding: 20px; border-left: 5px solid #ffcc00; border-radius: 8px; margin-bottom: 80px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); max-width: 100%; position: relative; overflow: hidden; height: 210px;">
+    <h2 style="color: #00529b; font-size: 1.4rem; margin-bottom: 10px;">Latest Updates</h2>
+    <div style="height: 70px; overflow: hidden; position: relative;">
+        <ul style="position: absolute; margin: 0; padding: 0;color:black; list-style: none; animation: scroll-up 12s linear infinite;">
+            <li style="padding: 6px 0; font-size: 1rem;">🎓 Admissions open for D.Pharm 2025-2026 batch – Apply Now!</li>
+            <li style="padding: 6px 0; font-size: 1rem;">🏆 Ranked among Top 20 Pharmacy Institutions in India</li>
+            <li style="padding: 6px 0; font-size: 1rem;">📢  applications deadline extended to JULY 15</li>
+            <li style="padding: 6px 0; font-size: 1rem;">🧪 AICTE-sponsored FDP begins May 20</li>
+            <li style="padding: 6px 0; font-size: 1rem;">🔬 New Drug Discovery Lab inaugurated</li>
+        </ul> -->
+
+        <style>
+    @keyframes scroll-up {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-100%); }
+    }
+
+    .scrolling-list {
+      animation: scroll-up 12s linear infinite;
+    }
+  </style>
+
+
+
+  <!-- Latest Updates Section -->
+  <div class="bg-indigo-100 border-l-4 border-yellow-400 rounded-lg shadow-md p-6 max-w-3xl mx-auto my-10">
+    <h2 class="text-indigo-800 text-xl font-semibold mb-3"> Latest Updates</h2>
+    
+    <div class="relative h-20 overflow-hidden">
+      <ul class="absolute scrolling-list space-y-2 text-gray-800">
+        <h5>🎓 Admissions open for D.Pharm 2025–2026 batch – Apply Now!</h5>
+        <h5>🏆 Ranked among Top 20 Pharmacy Institutions in India</h5>
+        <li>📢 Application deadline extended to <strong>July 15</strong></li>
+        <li>🧪 AICTE-sponsored FDP begins <strong>May 20</strong></li>
+        <li>🔬 New Drug Discovery Lab inaugurated</li>
+      </ul>
+    </div>
+  </div>
+
+   
+    </div>
+</div>
+
+        
+ </div>
+
+    
+
+<!-- Admisson enquiry -->
+
+<div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold text-green-700 mb-6 text-center">Admission Enquiry Form</h2>
+    <form action="#" method="POST" class="space-y-5">
+
+      <!-- Full Name -->
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+        <input type="text" id="name" name="name" required 
+               class="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" />
+      </div>
+
+      <!-- HSC Percentage -->
+      <div>
+        <label for="hsc_percentage" class="block text-sm font-medium text-gray-700">HSC Percentage</label>
+        <input type="number" id="hsc_percentage" name="hsc_percentage" min="0" max="100" step="0.01" required 
+               class="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" />
+      </div>
+
+      <!-- Address -->
+      <div>
+        <label for="address" class="block text-sm font-medium text-gray-700">Address</label>
+        <input type="text" id="address" name="address" required
+               class="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" />
+      </div>
+       <!-- Contact Number -->
+      <div>
+        <label for="contact" class="block text-sm font-medium text-gray-700">Contact Number</label>
+        <input type="tel" id="contact" name="contact" required pattern="[0-9]{10}" maxlength="10"
+               class="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+               placeholder="10-digit mobile number" />
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition">
+          Submit Enquiry
+        </button>
+
+        <div class="contact-info">
+      <p>Email: contact@example.com</p>
+      <p>Phone: +91-1234567890</p>
+      <p>Address: 123, Your Street, Your City</p>
+    </div>
+  </div>
+      </div>
+    </form>
+  </div>
+
+  
+
+     
+
+    
+  <div class="container">
+    
+    <p>Join Admisson Enquiry Group.</p>
+    <a class="whatsapp-btn" href="https://chat.whatsapp.com/HHqbg9VYvTv4FRWJq6ngB1" target="_blank">
+      Join WhatsApp Group
+    </a>
+  </div>
+</body>
+  </div> 
+
+
+ 
+   
+
+
+
+<footer style="background-color: rgba(0, 100, 0, 0.521); color: white; padding-bottom: 0px;margin-bottom: 0px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px;margin:auto;">
+
+      <!-- College Info -->
+      <div style="flex: 1 1 250px;">
+        <h2 style="font-size: 20px; margin :15px">🧪 Pharmacy College</h2>
+        <p style="font-size: 14px; color: #d1d5db;">
+          456 Health Street<br>
+          MedCity, Maharashtra 400001<br>
+          📞 +91-9876543210<br>
+          ✉️ contact@pharmacollege.edu.in
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <h2 style="font-size: 20px; margin-bottom: 15px;">Quick Links</h2>
+        <ul style="list-style: none; padding: 0; font-size: 14px; color: #d1d5db;">
+          <li><a href="#" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'">DTE Maharashtra</a></li>
+          <li><a href="#" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'">PCI India</a></li>
+          <li><a href="#" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'">AICTE</a></li>
+          <li><a href="#" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'">University Portal</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <h2 style="font-size: 20px; margin-bottom: 15px;">Follow Us</h2>
+        <div style="display: flex; gap: 15px; font-size: 18px; color: #d1d5db;">
+          <a href="#" style="color: inherit;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="color: inherit;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="color: inherit;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+     
+
+    </div>
+
+    <div style="text-align: center; padding-top: 20px; font-size: 13px; color: #d1d5db; border-top: 1px solid #34d399; margin-top: 30px;">
+      © 2025-2026 Sumitadevi Tompe Institute of Pharmaceutical Science. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Inline JavaScript -->
+  <script>
+    function subscribe(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message');
+      const isValid = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);
+      if (isValid) {
+        message.style.color = "#10b981";
+        message.textContent = "Thank you for subscribing!";
+        document.getElementById('email').value = '';
+      } else {
+        message.style.color = "#f87171";
+        message.textContent = "Please enter a valid email.";
+      }
+      return false;
+    }
+  </script>
+
+ 
+
+ 
+            
+     
+
+    
+    
+
+
+ 
+   
+
+
+
+
+ 
